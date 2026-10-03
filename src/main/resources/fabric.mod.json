@@ -9,8 +9,8 @@
   ],
   "contact": {
     "homepage": "https://modrinth.com/mod/firearms",
-    "sources": "https://git.cubealgos.de/cubealgos/create_firearms",
-    "issues": "https://github.com/cubealgos/create_firearms/issues"
+    "sources": "https://github.com/cubealgos-mods/create_firearms",
+    "issues": "https://github.com/cubealgos-mods/create_firearms/issues"
   },
   "license": "MIT",
   "environment": "*",
