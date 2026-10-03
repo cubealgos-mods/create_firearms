@@ -9,10 +9,10 @@ category: "create_firearms"
 | Item | Position |
 |---|---|
 | Version scheme | `<mod>+<mc>`, SemVer on the mod part over `contracts/public-surface.md`: `1.0.0+26.2` |
-| Branches | gitkontor's: `development`, `production`; releases are tags on `production` |
+| Branches | `development`, `production`; releases are tags on `production` |
 | Ticket prefix | `FA` |
 | Channels | Modrinth only; CurseForge deferred, as all four siblings |
-| CI | `just check` on every merge: lint, unit tests, game tests, by the Woodpecker file, live from the first push since the repo is public on Forgejo from the bootstrap (`https://git.cubealgos.de/cubealgos/create_firearms`, GitHub mirror `https://github.com/cubealgos/create_firearms`, which carries the public issue tracker) |
+| CI | None: `just check` is run locally before every merge: lint, unit tests, game tests. There is no CI service; the repository's home is GitHub (`https://github.com/cubealgos-mods/create_firearms`), which carries the public issue tracker. |
 | Always a playable build | `just client` boots with Create Fly at every merge; a player can craft an M1911, attach a suppressor at a smithing table, load `.45 ACP` cartridges, and fire at a mob |
 | Support | Issue tracker only; no SLA; a `SUPPORT.md` says so |
 | Ports | A new Minecraft version is a new `+<mc>` build from a port branch; the smithing/deploying recipe lookup mechanisms and the three client mixin targets are re-verified against both the new Minecraft jar and the tested Create Fly build on each port |
