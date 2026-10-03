@@ -24,7 +24,7 @@ weaponsmith, ammunition through the existing fletcher.
 | add or change a mixin | `docs/spec/04-architecture.md` `ARCH-DEC-001`; every mixin in this mod is client-only, on the shared `isScoping()` gate |
 | name, texture or describe a weapon | the compliance rule below |
 | add a dependency | `docs/spec/decisions/DEC-003-licence.md` (MIT) and heimathafen's dependency policy |
-| commit | scope `firearms`, the ticket key (`FA-N`) in the subject |
+| commit | scope `firearms`, the GitHub issue number in the subject, `(#N)`; old gitkontor keys (`FA-N`) stay valid in history |
 
 ## Compliance rule
 
@@ -39,10 +39,12 @@ is copied.
 ## Working here
 
 ```
-kontor claim FA-N
-kontor branch new FA-N <slug>
+gh issue view N
+git switch -c <type>/N-<slug> origin/development
 just check
 ```
+
+Work is tracked in GitHub issues: one issue per change, one branch `<type>/N-<slug>` off `development`, one pull request per issue, plain merge. The `gitkontor/data` branch is the archive of the former ticket system (keys `FA-N`); it stays untouched and is no longer written to.
 
 `just --list` shows the task surface; `just spec-sync` refreshes `docs/spec/` from the vault; `just map` regenerates the map.
 
